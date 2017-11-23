@@ -1,0 +1,49 @@
+body {
+	font: 20px 'Lato', sans-serif;
+}
+.container {
+	background: #fdde7e;
+	width: 1200px;
+	height: 600px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	margin: 50px auto;
+	align-items: center;
+}
+.item {
+	background: #ffffff;
+	border-radius: 3px;
+	width: 360px;
+	height: 440px;
+	box-shadow: 0 0 2px 0 #333333;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 1s ease-out 0s;
+}
+.item:hover,
+.item:active {
+	height: 500px;
+	//transform: scaleY(1.1);
+}
+.price {
+	color: #02995b;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 70px;
+	font-weight: 500;
+	margin-top: 0.5em;
+}
+.color {
+	font-size: 48px;
+	font-weight: 700;
+}
+.text {
+	text-align: center;
+	margin-bottom: 1.5em;
+	height: 70px;
+}
