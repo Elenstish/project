@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="favicon.png" rel="shortcut icon" type="favicon.png">
+</head>
+<body>
+	<div class="big_card">
+		<form action="#" class="card">
+	  		<header class="card_header">
+	    		<div class="card_price">$88</div>
+	    		<h1 class="card_title">Harold Finch</h1>
+	   			<h2 class="card_subtitle">Your total</h2>
+	  		</header>
+	  		<main class="card_main">
+	    		<label class="card_label">
+	      			<div class="card_caption number">Credit card number</div>
+	      			<input maxlength="16" type="text" class="card_input" value="">
+	    		</label>
+	    		<label class="card_label">
+	      			<div class="card_caption">Expiration date</div>
+	      			<label class="card_select-wrap">
+	        			<select class="card_select card_select__month">
+	          				<option value="">Month</option>
+	          				<option value="">January</option>
+	          				<option value="">February</option>
+	          				<option value="">March</option>
+	          				<option value="">April</option>
+	          				<option value="">May</option>
+	          				<option value="">June</option>
+	          				<option value="">July</option>
+	          				<option value="">August</option>
+	          				<option value="">September</option>
+	          				<option value="">October</option>
+	          				<option value="">November</option>
+	          				<option value="">December</option>
+	        			</select>
+	      				<select class="card_select card_select__year">
+	        				<option value="">Year</option>
+	        				<option value="">2010</option>
+	        				<option value="">2011</option>
+	        				<option value="">2012</option>
+	        				<option value="">2013</option>
+	        				<option value="">2014</option>
+	        				<option value="">2015</option>
+	        				<option value="">2016</option>
+	        				<option value="">2017</option>
+	        				<option value="">2018</option>
+	        				<option value="">2019</option>
+	        			</select>
+	        		</label>
+	    		</label>
+	    		<label class="card_label">
+	      			<div class="card_caption">CVV</div>
+	      			<div class="card_input-wrap">
+	        			<input maxlength="4" type="text" class="card_input card_input__cvv">
+	       				 <span class="card_tooltip">3 or 4 digits - view example</span>
+	      			</div>
+	    		</label>
+	    		<hr class="card_hr">
+	    		<button type="submit" class="card_button">Pay</button>
+	  		</main>
+	  		<footer class="card_footer">
+	    		<a href="#" class="card_cancel">Cancel order</a>
+	  		</footer>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #303337;
+	font: 14px/1 'Montserrat', sans-serif;
+	color: #9eabad;
+}
+.big_card {
+	background: url(unsplash.png);
+	padding: 34px;
+	box-shadow: 0 0 5px #637570;
+	width: 800px;
+	height: 600px;
+	margin: 20px auto;
+	position: relative;
+}
+.card {
+	width: 336px;
+	height: 534px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.card_header {
+	background: #efe5aa;
+	padding: 24px;
+	color: #637570;
+	position: relative;
+}
+.card_price {
+	float: right;
+	right: 24px;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: .005em;
+	position: absolute;
+	height: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.card_title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+}
+.card_subtitle {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: .075em;
+}
+.card_main {
+	margin: 24px;
+	height: 406px;
+}
+.card_footer {
+	position: absolute;
+	height: 16px;
+	bottom: 20px;
+	border-bottom: 1px solid #dae0e1;
+	margin-left: calc(50% - 38.2px);
+}
+.card_select {
+	height: 42px;
+	font-size: 13px;
+	color: #637570;
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 2px solid #b3c1c4;
+	margin-top: 10px;
+	margin-bottom: 26px;
+	float: left;
+}
+.card_caption {
+	font-size: 13px;
+}
+.card_select__month {
+	width: 176px;
+	margin-right: 16px;
+}
+.card_select__year {
+	width: 96px;
+}
+.card_input {
+	font-size: 13px;
+	color: #637570;
+	width: 100%;
+	border: 2px solid #b3c1c4;
+	margin: 8px 0;
+	height: 42px;
+	padding: 16px;
+}
+.card_input__cvv {
+	width: 100px;
+}
+.card_label {
+	display: block;
+	margin: 22px 0;
+	font-size: 0;
+}
+.number {
+	padding-top: 24px;
+}
+.card_hr {
+	border-color: #e4e7e8;
+}
+.card_tooltip {
+	font-size: 13px;
+	padding-left: 2px;
+}
+.card_button {
+	margin: 24px 0;
+	background: green;
+	color: white;
+	border: 0;
+	padding: 14px;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+}
+.card_select-wrap {
+	display: block;
+	position: relative;
+}
+.card_cancel {
+	font-size: 12px;
+	color: #9eabad;
+	text-decoration: none;
+}
+.card_select:active,
+.card_input:active,
+.card_select:hover,
+.card_input:hover {
+	background: #efe5aa;
+}
+.card_button:hover,
+.card_button:focus {
+    transition: all 1s ease-out 0s;
+    color: #9eabad;
+}
+
