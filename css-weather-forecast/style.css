@@ -1,0 +1,84 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+	background: #3399CC;
+	border: 20px solid #2B81AC;
+}
+body {
+	font-family: Lucida Grante, Lusida  Sans Unicode;
+	color: #FAFCFD;
+}
+header {
+	padding: 50px 200px 0px;
+	text-align: left;
+	margin: auto 13%;
+}
+ul {
+	list-style: none;
+	max-width: 600px;
+	padding: 2px;
+	height: 510px;
+	text-align: center;
+	margin: auto;
+	font-size: 0;
+}
+li {
+	display: inline-block;
+	width: 25%;
+	border: 2px solid white;
+	line-height: 290%;
+	font-size: 21px;
+}
+ul:hover li {
+	opacity: 0.5;
+}
+ul li:hover {
+	opacity: 1;
+}
+li:last-child {
+width: 100%;
+}
+li:nth-child(8n+1) {
+width: 50%;
+}
+.paris {
+	background: #33CCCC;
+}
+.belgrade {
+	background: #996699;
+}
+.moscow {
+	background: #C24747;
+}
+.tel {
+	background: #E2674A;
+}
+.cair {
+	background: #FFCC66;
+}
+.york {
+	background: #99CC99;
+}
+.delhi {
+	background: #669999;
+}
+.san{
+	background: #CC6699;
+}
+.tokyo {
+	background: #339966;
+}
+.sydney {
+	background: #666699;
+}
+footer {
+	padding: 50px 200px 0;
+	text-align: left;
+	font-size: 60%;
+	margin: auto 13%;
+}
+* {
+	transition: apacity 1s ease-in;
+}
