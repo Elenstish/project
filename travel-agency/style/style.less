@@ -112,7 +112,7 @@ svg:hover {
 .about_wrap,
 .container,
 .conainer_2 {
-    width: 1110px;
+    width: 78%;
 }
 
 /*---------------------- Section Home--------------------*/
@@ -370,7 +370,6 @@ svg:hover {
     font-size: 16px;
 }
 .container {
-    width: 1110px;
     position: relative;
     margin: auto;
     display: -ms-flexbox;
@@ -443,7 +442,6 @@ svg:hover {
     align-items: center;
 }
 .conainer_2 {
-    width: 1110px;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -460,7 +458,8 @@ svg:hover {
 .main_3 h1 {
     display: block;
     height: 150px;
-    margin-top: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
 }
 .main_3 .container {
@@ -471,19 +470,33 @@ svg:hover {
 .box_section_3 {
     height: 284px;
 }
+/* .box_section_3 {
+    //width: 665px;
+    width: 60%;
+} */
 .box_section_3 {
-    width: 665px;
+width: 60%;
+height: 284px;
+background: #232323;
+padding: 0 30px;
+box-sizing: border-box;
+
 }
+
 .box_section_3 .h1 {
-    width: 665px;
-    max-height: 50px;
+    /* width: 665px; */
+    width: 100%;
+    height: 50px;
     text-align: left;
+    padding: 10px;
+
 }
 .box_section_text {
-    width: 558px;
-    width: 40vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* width: 558px; */
+    width: 100%;
+    height: 198px;
+    overflow: auto;
+    //text-overflow: ellipsis;
     position: relative;
     &::before {
         content: "\201C";
@@ -498,6 +511,8 @@ svg:hover {
 }
 .box_arrow_container {
     margin-top: 30px;
+    margin-right: 11%;
+    //margin-left: auto;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
