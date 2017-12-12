@@ -1,0 +1,561 @@
+@fontFamilySecondary: 'Josefin Sans', sans-serif;;
+@fontFamilyMain: 'aleoregular', Slab Serif;
+@fontFamilyLight: 'aleolight', Slab Serif;
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/aleo-regular-webfont-webfont.eot');
+    src: url('../fonts/aleo-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-regular-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleolight';
+    src: url('../fonts/aleo-light-webfont-webfont.eot');
+    src: url('../fonts/aleo-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-light-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-light-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleobold';
+    src: url('fonts/aleo-bold-webfont-webfont.woff2') format('woff2'),
+         url('fonts/aleo-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@colorMain: #e8e8e8;
+@colorBackground: #5474fd;
+@colorFooter: #232323;
+@font-default: 400 16px~'/'26px 'Josefin Sans', sans-serif;
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+    -webkit-transition: color .3s ease-in, border-color .3s easy-in-out;
+    -moz-transition: color .3s ease-in, border-color .3s easy-in-out;
+    transition: color .3s ease-in, border-color .3s easy-in-out;
+}
+a {
+    text-decoration: none;
+    color: white;
+    &:hover,
+    &:active {
+        color: darken(@colorMain, 10%);
+        opacity: 0.8;
+    }
+}
+
+svg:hover {
+    stroke-width: 1px;
+    stroke: @colorFooter;
+    opacity: 0.5;
+}
+
+.h1,
+.h2 {
+	font-size: 20px;
+	font-weight: 400;
+	font-family: @fontFamilySecondary;
+	color: @colorMain;
+}
+.h1 {
+
+	text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.button {
+    background: @colorBackground;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 14px/1.5 @fontFamilyMain, sans-serif;
+    border: 1px solid white;
+    height: 60px;
+    width: 150px;
+    &_main {
+        box-sizing: border-box;
+        display: block;
+        border: 0;
+        line-height: 60px;
+        text-align: center;
+        width: 225px;
+        margin-top: 50px;
+    }
+    &:hover {
+        background: darken(@colorBackground, 10%);
+    }
+}
+.home_wrap,
+.header_menu,
+.about_image,
+.about_footer {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.home,
+.about,
+.header,
+.main,
+.about_footer,
+.main_3,
+.footer {
+    width: 100vw;
+}
+.header_menu,
+.about_wrap,
+.container,
+.conainer_2 {
+    width: 1110px;
+}
+
+/*---------------------- Section Home--------------------*/
+.home {
+    height: 100vh;
+    background: url(../img/section1.png) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+/*---------------------- BHRomaon Section --------------------*/
+.home_wrap {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+.home_logo {
+    font: @fontFamilySecondary;
+    font-size: 48px;
+
+    &__secondary {
+        font: @fontFamilySecondary;
+        font-size: 22px;
+        color: #fff;
+        letter-spacing: 4.1px;
+        margin-bottom: 50px;
+    }
+}
+.search {
+    background: white;
+    width: 650px;
+    height: 60px;
+    position: relative;
+    box-sizing: border-box;
+    &_input {
+        width: 500px;
+        border: 0;
+        height: 47px;
+        text-align: center;
+        color: #999999;
+        ont-size: 14px;
+        letter-spacing: 3px;
+        padding-top: 8px;
+    }
+}
+.search_input:focus {
+   outline: none;
+   text-align: left;
+   padding-left: 10px;
+}
+
+.search_input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.search_input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.search_input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.search_input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.search_input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.search_input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.search_input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.search_input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.icon_search {
+    width: 25px;
+    height: 25px;
+}
+.button_search {
+    position: absolute;
+    top: 0px;
+    line-height: 60px;
+}
+.home_scroll {
+    margin-top: 120px;
+}
+.scroll {
+    width: 14px;
+    height: 8px;
+    &_down {
+        text-align: center;
+    }
+}
+
+/*---------------------- END BHRomaon Section --------------------*/
+/*---------------------- HEADER Section --------------------*/
+.header {
+    position: absolute;
+     /*For IE 11*/
+    position: fixed;
+   /*For all browsers*/
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 14;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    background-color: @colorBackground;
+    opacity: 0.9;
+
+    &_menu {
+    height: 80px;
+    margin: 0 auto;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    justify-content: space-between;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+    align-items: center;
+    }
+}
+.menu_link {
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    font: @fontFamilyMain;
+    padding: 0 20px;
+}
+
+/*---------------------- END HEADER Section --------------------*/
+
+/*---------------------- Section about--------------------*/
+.about {
+    background: url(../img/section2.png) 50% 0 no-repeat;
+    font: @font-default;
+    color: @colorMain;
+    &_wrap {
+    height: 685px;
+    background-size: cover;
+    margin: auto;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+    }
+    &_menu,
+    &_image {
+        width: 540px;
+    }
+}
+.about_menu {
+    margin-right: 30px;
+    line-height: 1.8;
+}
+.about_image {
+    margin-left: 70px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    &_1,
+    &_2 {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        transition: all 1s ease-out 0s;
+    }
+    &_2 {
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    &_1:hover,
+    &_2:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.about_menu__title {
+    font-family: @fontFamilyMain;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.about_footer {
+    box-sizing: border-box;
+    height: 337px;
+    bottom: 0;
+    background: @colorFooter;
+    font: @fontFamilyMain;
+    font-size: 36px;
+    color: @colorMain;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    &::before {
+        display: block;
+        border-top: 1px dashed @colorMain;
+        content: '';
+        width: 300px;
+        height: 200px;
+        background: transparent;
+        border-radius: 50%;
+        position:absolute;
+        margin: -50px 190px;
+    }
+    &::after {
+        display: block;
+        border-top: 1px dashed @colorMain;
+        content: '';
+        width: 300px;
+        height: 200px;
+        background: transparent;
+        border-radius: 50%;
+        position:absolute;
+        margin: -50px -190px;
+    }
+}
+.about_footer div {
+    width: 380px;
+}
+.search_footer {
+    text-align: center;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/*---------------------- END Section about--------------------*/
+/*---------------------- Section main--------------------*/
+.main {
+    width: 100vw;
+    height: 700px;
+    background: url(../img/section3.png) 50% no-repeat;
+    background-size: cover;
+    font: @font-default;
+    font-weight: 300;
+    color: @colorMain;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.container {
+    width: 1110px;
+    position: relative;
+    margin: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    align-items: center;
+}
+.box {
+    width: 540px;
+    height: 371px;
+    background: #232323;
+    opacity: 0.9;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+}
+.box .h1 {
+    margin: 0;
+}
+.box a {
+    margin-top: 20px;
+}
+.box_left {
+    position: absolute;
+    top: 230px;
+}
+/*---------------------- END Section main--------------------*/
+/*---------------------- Section main_2--------------------*/
+.main_2 {
+    background: url(../img/section4.png) 50% no-repeat;
+}
+.box_right {
+    position: absolute;
+    right: 0;
+    top: 230px;
+}
+/*---------------------- END Section main_2--------------------*/
+/*---------------------- Section main_3--------------------*/
+.main_3 {
+    width: 100vw;
+    height: 731px;
+    background: url(../img/section5.png) 50% no-repeat;
+    background-size: cover;
+    font: @fontFamilySecondary;
+    font-size: 16px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    align-items: center;
+}
+.conainer_2 {
+    width: 1110px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    align-items: center;
+}
+.main_3 h1 {
+    display: block;
+    height: 150px;
+    margin-top: 120px;
+    text-align: center;
+}
+.main_3 .container {
+    margin-top: 0;
+}
+.main_3 .container,
+.conainer_image,
+.box_section_3 {
+    height: 284px;
+}
+.box_section_3 {
+    width: 665px;
+}
+.box_section_3 .h1 {
+    width: 665px;
+    max-height: 50px;
+    text-align: left;
+}
+.box_section_text {
+    width: 558px;
+    width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    &::before {
+        content: "\201C";
+        font-family: Arial;
+        position: absolute;
+        font-size: 60px;
+        color: @colorBackground;
+        left: 0;
+        top: 35px;
+        line-height: 0;
+    }
+}
+.box_arrow_container {
+    margin-top: 30px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+.box_arrow {
+    width: 78px;
+    height: 48px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        margin-right: 10px;
+}
+.box_arrow__left .scroll {
+    -moz-transform: rotate(90deg); /* Для Firefox */
+        -ms-transform: rotate(90deg); /* Для IE */
+        -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(90deg); /* Для Opera */
+        transform: rotate(90deg);
+}
+.box_arrow__right .scroll {
+    -moz-transform: rotate(270deg); /* Для Firefox */
+        -ms-transform: rotate(270deg); /* Для IE */
+        -webkit-transform: rotate(270deg); /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(270deg); /* Для Opera */
+        transform: rotate(270deg);
+}
+/*---------------------- END Section main_3--------------------*/
+/*---------------------- FOOTER--------------------*/
+.footer {
+    height: 268px;
+    background: @colorFooter;
+    font: @fontFamilySecondary;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a {
+    margin: 0 8px;
+}
+.footer_logo .h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2.3px;
+}
+.footer_logo .home_logo__secondary {
+    font-size: 16px;
+    letter-spacing: .4px;
+}
+/*---------------------- END FOOTER--------------------*/
