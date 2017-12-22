@@ -107,7 +107,7 @@ svg:hover {
 .main_3,
 .footer {
     width: 100vw;
-    min-width: 1110px;   
+    min-width: 1110px;
 }
 
 .header_menu,
@@ -165,12 +165,12 @@ svg:hover {
     &_input {
         width: 500px;
         border: 0;
-        height: 47px;
+        height: 60px;
         text-align: center;
         color: #999999;
-        ont-size: 14px;
+        font-size: 14px;
         letter-spacing: 3px;
-        padding-top: 8px;
+        box-sizing: border-box;
     }
 }
 .search_input:focus {
@@ -191,11 +191,14 @@ svg:hover {
 .icon_search {
     width: 25px;
     height: 25px;
+    position: absolute;
+    top: 13px;
+    right: 20px;
 }
 .button_search {
     position: absolute;
     top: 0px;
-    line-height: 60px;
+    padding-right: 30px;
 }
 .home_scroll {
     margin-top: 120px;
