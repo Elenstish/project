@@ -1,0 +1,379 @@
+@fontFamilyMain: 'opensans', sans-serif;
+@fontFamilyLight: 'sourcesanspro', sans-serif;
+
+
+@colorHome: #ffffff;
+@colorMain: #81868e;
+@colorBg: #f3f3f3;
+@colorTitle: #333b46;
+@colorScroll: #19bd9a;
+
+.main,
+.header,
+.home,
+.portfolio,
+.contact,
+.team_contact,
+.footer {
+    width: 100vw;
+    min-width: 1110px;
+}
+.main {
+	max-width: 1366px;
+}
+
+a {
+    text-decoration: none;
+    color: @colorHome;
+    font-family: @fontFamilyMain;
+    }
+.h1 {
+	font-family: @fontFamilyLight;
+	font-size: 35px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: @colorTitle;
+}
+.h2 {
+	font-family: @fontFamilyLight;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: @colorMain;
+	font-style: italic;
+}
+.h3 {
+	font-family: @fontFamilyMain;
+	font-size: 20px;
+	font-weight: 300;
+	color: @colorHome;
+}
+.p {
+	font-family: @fontFamilyMain;
+	font-size: 14px;
+	font-weight: 300;
+	color: @colorMain;
+	letter-spacing: 4px;
+}
+.logo {
+	width: 120px;
+	height: 24px;
+	fill: @colorHome;
+}
+.footer_logo {
+	width: 120px;
+	height: 24px;
+	fill: #323a45;
+}
+/*---------------------- Header Section --------------------*/
+.header {
+    position: absolute;
+     /*For IE 11*/
+    position: fixed;
+   /*For all browsers*/
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 14;
+    margin: 0 auto;
+    top: 0;
+    &_menu {
+    height: 80px;
+    margin: 0 auto;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+    justify-content: space-between;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+    align-items: center;
+    }
+}
+.header_menu {
+	width: 84%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.menu_link {
+	display: -inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 22px;
+    &:hover {
+    	border-radius: 30px;
+    	border: 2px solid @colorHome;
+
+    }
+}
+
+/*---------------------- END Header Section --------------------*/
+/*---------------Section Home---------------*/
+
+.home {
+	margin-top: -90px;
+	padding-top: 54.17%;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    position: relative;
+	}
+.home_wrap {
+    text-align: center;
+    max-width: 615px;
+    margin: 0 auto;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -130px 0 0 -307px;
+    &_description {
+    	line-height: 28px;
+    	margin: 10px 0;
+    	}
+   	}
+.home_title .h1 {
+	color: @colorHome;
+	}
+.home_description .p {
+	color: @colorHome;
+	}
+.scroll_down {
+	background-color: @colorScroll;
+	position: absolute;
+	bottom: 90px;
+	left: 48%;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	& a {
+		font-size: 35px;
+		color: transparent;
+		z-index: 99px;
+		}
+	}
+.scroll {
+	margin-top: 120px;
+	width: 15px;
+	height: 12px;
+	position: absolute;
+	left: 30%;
+	bottom: 9px;
+	}
+/*---------------END Section Home--------------
+/*--------------section portfolio--------------*/
+.portfolio {
+	padding: 90px 0 95px;
+	text-align: center;
+	background: @colorBg;
+	&_title {
+		line-height: 12px;
+		margin: 0 auto 38px;
+    	}
+	&_description {
+		margin: 0 auto 72px;
+		width: 472px;
+    	}
+    &_item {
+    	display: inline-block;
+    	color: #464646;
+    	font-family: @fontFamilyMain;
+    	font-size: 16px;
+    	font-weight: 400;
+    	padding: 0 10px;
+    	height: 32px;
+    	margin: 0 5px;
+    	&:hover {
+    		cursor: pointer;
+    		}
+    	}
+	}
+.active_item {
+	border-bottom: 2px solid @colorScroll;
+	&:hover {
+	 	color: @colorScroll;
+		}
+	&:active {
+	 	text-decoration: none;
+	 	position: relative;
+	 	top: 1px;
+		}
+	}
+.portfolio_title .h1 {
+	font-size: 20px;
+	line-height: 12px;
+	letter-spacing: 1.1px;
+	}
+.portfolio_description .p {
+	line-height: 25px;
+	letter-spacing: 1.1px;
+	}
+.item {
+	margin-bottom: 56px;
+	text-align: center;
+	max-width: 1125px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	}
+.works {
+	width: 84%;
+	margin: 0 auto;
+	}
+.portfolio_works__item {
+	width: 25%;
+	padding-bottom: 10px;
+	}
+.portfolio_works__item img {
+	display: block;
+	max-width: 100%;
+	}
+/*--------------END section portfolio--------------*/
+/*--------------section team--------------*/
+.team {
+	background: @colorHome;
+	&_text {
+		text-align: right;
+		padding-right: 50px;
+	}
+	&_h1 {
+		text-transform: capitalize;
+	}
+}
+.slider {
+	width: 73%;
+	margin: 0 auto;
+}
+.team_slider {
+	width: inherit;
+	height: 370px;
+	margin: auto;
+	display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex !important;
+	    -webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	   -webkit-align-content: stretch;
+	       -ms-flex-line-pack: stretch;
+	       align-content: stretch;
+	       -webkit-align-items: stretch;
+	       -ms-flex-align: stretch;
+	       align-items: stretch;
+	}
+	.img_slider {
+		vertical-align: middle;
+	}
+.team_title {
+	border-right: 2px solid @colorScroll;
+	padding-right: 50px;
+	}
+.team_contact {
+	height: 200px;
+	background: url(../img/contact.jpg) 100% 100% no-repeat;
+	background-size: cover;
+	display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	&__link {
+		border-radius: 30px;
+		border: 2px solid @colorHome;
+		padding: 8px 28px;
+		}
+	}
+// ----------- slick.slider---- DOTS CUSTOMIZE----
+.slick-dots li button:before {
+    font-size: 10px;
+    color: white;
+    -webkit-text-stroke: 1px @colorScroll;
+	}
+.slick-dots li.slick-active button:before {
+    color: @colorScroll;
+	}
+// --------------------------------
+
+/*--------------END section team--------------*/
+/*--------------Section testimonials--------------*/
+.testimonials {
+	background: @colorBg;
+}
+.slider_test {
+	width: 1170px;
+	height: 300px;
+}
+.slider__white {
+	background-color: @colorHome;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+}
+.test_title {
+	padding-left: 70px;
+	& h1 {
+	color: @colorScroll;
+	}
+}
+.text_left {
+	text-align: left;
+	padding-left: 70px;
+	margin-top: 30px;
+	width: 760px;
+}
+.img_left {
+	margin-top: 50px;
+}
+
+/*--------------END Section testimonials--------------*/
+
+/*--------------section contact--------------*/
+.contact {
+	background: @colorHome;
+}
+#map {
+	width: 100%;
+	height: 440px;
+	background-color: grey;
+}
+/*--------------END section contact--------------*/
+/*--------------section footer--------------*/
+.footer {    
+    background: @colorHome;
+    font: @fontFamilyMain;
+    font-size: 16px;
+    height: 160px;
+    display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+}
+ .social {
+ 	margin: 30px auto 60px;;
+	& a {
+    margin: 0 4px;
+	}
+}
+/*--------------END section footer--------------*/
