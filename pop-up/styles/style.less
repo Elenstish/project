@@ -173,15 +173,19 @@ body {
 .popup_partner {
     width: 734px;
     transition-property: width;
-    transition: linear .5s;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); 
+    overflow-y: auto;
+    overflow-x: hidden;
     display:none;
     background: #463c84 url("../images/bg_partner1.png") 50% no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0,0,0,1);
     position: fixed;
     margin: auto;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
     padding: 44px 36px 30px 50px;  
     font-family: 'SegoeUI', sans-serif;
     font-size: 1rem;
