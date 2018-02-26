@@ -1,5 +1,4 @@
 * {
-    outline: none;
     box-sizing: border-box;
 }
 body {
@@ -113,10 +112,18 @@ body {
 .colortext {
     color: #fd5356;
 }
-.rouble {
+.rub {
+    font-family: arial;
+    vertical-align: middle;
+    border-bottom: 5px solid;
+    line-height: 20px;
+    display: inline-block;
+    width: 0.4em;
     color: #fd5356;
-    font-family: 'PT Sans', serif;
-    font-weight: bold;
+    @media only screen and (max-width: @small) {
+        line-height: 10px;
+        border-bottom: 3px solid;
+    }
 }
 .home_btn {
     background-color: #fd5356;
